@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main()
+{
+  
+  int a=0,b=0,c=0;
+  printf("Enter any number :");
+  scanf("%d",& a);
+  for(b=2;b<a/2;++b)
+  {
+    if(a%b==0)
+    {
+      c=1;
+      break;
+    }
+  }
+  if(a==1)
+  {
+    printf("1 is neither a Prime nor a composite number");
+  }
+  else
+  {
+    if(c==0)
+    printf("%d is a prime number.",a);
+    else
+    printf("%d is not a prime number.",a);
+  }
+  
+  return 0;
+}
